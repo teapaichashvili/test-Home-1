@@ -7,61 +7,67 @@ class
     static void Main(string[] args)
 
     {
-        // Davaleba # 1
-        Console.Write("sheiyvanot pirveli ricxvi (X):");
+        // Homework # 1
+        Console.Write("x");
         int x = Int32.Parse(Console.ReadLine());
-        Console.Write("sheiyvanot meore ricxvi (y):");
+        Console.Write("y");
         int y = Int32.Parse(Console.ReadLine());
-        Console.Write("sheiyvanot mesame ricxvi (z):");
+        Console.Write("z");
         int z = Int32.Parse(Console.ReadLine());
         Console.WriteLine();
-        Console.Write("Migebuli shedegi (x + z * y)= ");
+        Console.Write("Sum (x + z * y)= ");
         Console.WriteLine(x + z * y);
         Console.WriteLine();
         Console.WriteLine();
 
 
-        //Davaleba # 2
-        Console.Write("sheiyvanot tqveni saxeli");
-        string saxeli = Console.ReadLine();
-        Console.Write("sheiyvanot tqveni gvari");
-        string gvari = Console.ReadLine();
-        Console.Write("sheiyvanot tkveni asaki");
-        int asaki = Int32.Parse(Console.ReadLine());
-        Console.Write("sheiyvanot tkveni simaglen (m): ");
-        float simagle = float.Parse(Console.ReadLine());
-        Console.Write("sheiyvanot tkveni wona (kg): ");
-        float wona = float.Parse(Console.ReadLine());
+        //Homework # 2
+        Console.Write("name");
+        string name = Console.ReadLine();
+        Console.Write("last name");
+        string lastName = Console.ReadLine();
+        Console.Write("Age");
+        int Age= Int32.Parse(Console.ReadLine());
+        Console.Write("height ");
+        float Height = float.Parse(Console.ReadLine());
+        Console.Write("weight");
+        int weight= int.Parse(Console.ReadLine());
         Console.WriteLine();
-        Console.WriteLine("Tqveni monacemebi: ");
-        Console.WriteLine(saxeli + "" + gvari + "," + "" + asaki + "wlis" + "," + "" + simagle + "cm" + "," + "" + wona + "kg");
-        Console.WriteLine();
-        Console.WriteLine();
+        Console.WriteLine(name + " " + lastName);
+        Console.WriteLine("Your age is: " + Age);
+        Console.WriteLine("Your height is: " + Height);
+        Console.WriteLine("Your weight is: " + weight);
 
-        //Davaleba # 3
 
-        Console.Write("sheiyvanot tqveni wona (kg): ");
-        float weight = float.Parse(Console.ReadLine());
-        Console.Write("sheiyvanot tqveni simagle (m): ");
-        float height = float.Parse(Console.ReadLine());
-        float bmi = weight / (height * height);
-        Console.WriteLine();
-        Console.WriteLine("Tkveni BMI (kg/m2) aris: " + bmi);
-        Console.WriteLine();
-        Console.WriteLine();
 
-        //Davaleba #4
+        //Homework # 3
+
+
+
+        Console.WriteLine("Please Enter your height in CM : ");
+        float height1 = float.Parse(Console.ReadLine());
+
+        Console.WriteLine("Please Enter your weight in KG: ");
+        float weight1 = float.Parse(Console.ReadLine());
+
+        float Bmi = weight1 / ((height1 / 100) * (height1 / 100));
+        Console.WriteLine("Your Bmi is equel " + Bmi);
+
+
+
+        //Homework #4
+
+        
 
         string vertical = "|";
-        string horizontal = "- - -";
-        Console.WriteLine();
-        Console.WriteLine("" + "" + "" + vertical + "" + "" + "" + vertical);
-        Console.WriteLine("" + "1" + "" + vertical + "" + "2" + "" + vertical + "3");
+        string horizontal = "_";
+        Console.WriteLine(" " + vertical + " " + vertical + " ");
+        Console.WriteLine("1" + vertical + "2" + vertical + "3");
         Console.WriteLine(horizontal + vertical + horizontal + vertical + horizontal);
-        Console.WriteLine("" + "4" + "" + vertical + "" + "5" + "" + vertical + "6");
+        Console.WriteLine(" " + vertical + " " + vertical + " ");
+        Console.WriteLine("4" + vertical + "5" + vertical + "6");
         Console.WriteLine(horizontal + vertical + horizontal + vertical + horizontal);
-        Console.WriteLine("" + "7" + "" + vertical + "" + "8" + "" + vertical + "9");
-        Console.WriteLine(horizontal + vertical + horizontal + vertical + horizontal);
-        Console.WriteLine("" + "" + "" + vertical + "" + "" + "" + vertical);
+        Console.WriteLine(" " + vertical + " " + vertical + " ");
+        Console.WriteLine("7" + vertical + "8" + vertical + "9");
     }
 }
